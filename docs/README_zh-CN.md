@@ -45,6 +45,14 @@
   <img width="750px" src="../docs/images/about_dark.jpeg" alt="uFolio Preview" />
 </div>
 
+## 🌟 在线演示  
+
+<div align="center">  
+  <a href="https://ufolio.gnd.vin/" target="_blank">  
+    <img src="https://img.shields.io/badge/Demo-Live%20Preview-0366d6.svg?style=for-the-badge&logo=web&logoColor=white" alt="live demo" />  
+  </a>  
+</div>
+
 ## 🚀 快速开始
 
 ```bash
