@@ -21,15 +21,15 @@ import { Calendar, Code2, Coffee, Heart, Music, Book, Camera, Gamepad2 } from "l
 
 const config: Config = {  
     basic: {  
-        seo_title: "我的小站",  
-        seo_description: "你好,我是一名全栈开发工程师",  
+        seo_title: "uFolio",  
+        seo_description: "你好,我是一名空栈开发工程师",  
         seo_keywords: "个人网站,作品集,开发者",  
     },  
     home: {  
         title_1: "你好,",  
-        title_2: "我是小明",  
-        name: "小明",  
-        label: "全栈开发工程师",  
+        title_2: "我是uFolio",  
+        name: "uFolio",  
+        label: "空栈开发工程师",  
         picture: "/logo.svg",  
     },  
     about: {  
@@ -39,7 +39,7 @@ const config: Config = {
           <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">  
             <img src="/logo.svg" alt="个人Logo" width="120px" />  
             <h1 style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin: 0; font-size: 3.5rem; font-weight: 700;">  
-              我的小站  
+                uFolio  
             </h1>  
           </div>  
         
@@ -111,15 +111,15 @@ const config: Config = {
                 image: "/projects/project_1.jpeg",  
                 description: "基于React和TailwindCSS打造的现代化个人网站",  
                 tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],  
-                github: "https://github.com/",  
-                demo: "https://your-demo.dev",  
+                github: "https://github.com/uarix/uFolio",  
+                demo: "https://ufolio.gnd.vin",  
             }  
         ],  
     },  
     social: {  
         title: "社交账号",  
         links: [  
-            { icon: SiGithub, href: "https://github.com", label: "GitHub" },  
+            { icon: SiGithub, href: "https://github.com/uarix", label: "GitHub" },  
             { icon: SiMastodon, href: "https://linkedin.com", label: "Mastodon" },  
             { icon: SiX, href: "https://x.com", label: "推特" },  
             { icon: SiMaildotru, href: "mailto:your@email.com", label: "邮箱" },  

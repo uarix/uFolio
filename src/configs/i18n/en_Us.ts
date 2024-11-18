@@ -111,15 +111,15 @@ const config: Config = {
                 image: "/projects/project_1.jpeg",
                 description: "A beautiful web application built with React and TailwindCSS.", 
                 tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],  
-                github: "https://github.com/",  
-                demo: "https://your-demo.dev",
+                github: "https://github.com/uarix/uFolio",  
+                demo: "https://ufolio.gnd.vin",
             }
         ],  
     },  
     social: {  
         title: "Social Links",  
         links: [  
-            { icon: SiGithub, href: "https://github.com", label: "GitHub" },  
+            { icon: SiGithub, href: "https://github.com/uarix", label: "GitHub" },  
             { icon: SiMastodon, href: "https://linkedin.com", label: "Mastodon" },  
             { icon: SiX, href: "https://x.com", label: "Twitter/X" },  
             { icon: SiMaildotru, href: "mailto:your@email.com", label: "Email" },  
