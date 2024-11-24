@@ -46,7 +46,7 @@ jobs:
       - name: Build  
         run: npm run build  
         env: 
-          BASE_URL: "/uFolio/"
+          BASE_URL: "/"
       - name: Upload artifact  
         uses: actions/upload-pages-artifact@v3  
         with:  
@@ -63,5 +63,3 @@ jobs:
       - name: Deploy to GitHub Pages  
         id: deployment  
         uses: actions/deploy-pages@v4  
-        with:  
-          publish_dir: ./dist
