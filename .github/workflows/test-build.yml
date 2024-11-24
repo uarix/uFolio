@@ -1,0 +1,43 @@
+name: Test build with NodeJS  
+
+on:  
+  push:  
+    branches: [ "main" ]  
+  pull_request:  
+    branches: [ "main" ]  
+
+jobs:  
+  build:  
+    runs-on: ubuntu-latest  
+
+    strategy:  
+      fail-fast: true  # stop the workflow as soon as one job fails
+      matrix:  
+        node-version: [18.x, 20.x, 22.x]  
+
+    steps:  
+    - uses: actions/checkout@v4  
+
+    - name: Cache Node.js modules  
+      uses: actions/cache@v3  
+      with:  
+        path: ~/.npm  
+        key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}  
+        restore-keys: |  
+          ${{ runner.os }}-node-${{ matrix.node-version }}-  
+
+    - name: Use Node.js ${{ matrix.node-version }}  
+      uses: actions/setup-node@v4  
+      with:  
+        node-version: ${{ matrix.node-version }}  
+
+    - name: Install Dependencies  
+      run: npm install  
+
+    - name: Run Tests  
+      run: npm test  
+
+    - name: Build  
+      env:  
+        NODE_ENV: production  
+      run: npm run build  
