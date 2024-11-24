@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 import compress from 'vite-plugin-compression';  
 
 export default defineConfig(({ mode }) => ({  
-  base: './',
+  base: process.env.BASE_URL || '/',
   server: {  
     host: "::",  
     port: 8080,  
